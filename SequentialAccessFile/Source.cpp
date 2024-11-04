@@ -3,7 +3,7 @@
 
 int main(void) {
     FILE* cfPtr = NULL; // cfPtr = clients.txt file pointer
-
+    // C:\\Users\\YourUsername\\Documents\\clients.txt"
     // fopen opens the file. Exit the program if unable to create the file
     if ((cfPtr = fopen("clients.txt", "w")) == NULL) {
         // the file could not be opened, possibly because the program does not have permission to create a file in the specified folder
