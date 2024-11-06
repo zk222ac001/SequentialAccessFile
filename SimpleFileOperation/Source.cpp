@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    printf("Writing Text into File.............................");
     FILE* filePointer;
     filePointer = fopen("example.txt", "w");
     if (filePointer == NULL) {
@@ -10,6 +11,7 @@ int main() {
     fprintf(filePointer, "Hello, World!\n");
     fclose(filePointer);
 
+    printf("Reading Text from the File.............................");
     filePointer = fopen("example.txt", "r");
     if (filePointer == NULL) {
         printf("Error opening file.\n");
